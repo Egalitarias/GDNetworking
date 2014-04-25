@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D08C8A7190A588900FF052A /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08C8A4190A588900FF052A /* NSDictionary+JSON.m */; };
+		3DD13F3A190A56D1004CAD5B /* GDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13F39190A56D1004CAD5B /* GDRequest.m */; };
+		3DD13F3B190A56D1004CAD5B /* GDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD13F39190A56D1004CAD5B /* GDRequest.m */; };
 		3DD8A8A8190A51F800C5D614 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD8A8A7190A51F800C5D614 /* Foundation.framework */; };
 		3DD8A8AA190A51F800C5D614 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD8A8A9190A51F800C5D614 /* CoreGraphics.framework */; };
 		3DD8A8AC190A51F800C5D614 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD8A8AB190A51F800C5D614 /* UIKit.framework */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D08C8A3190A588900FF052A /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+JSON.h"; path = "GDNetworking/NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		3D08C8A4190A588900FF052A /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+JSON.m"; path = "GDNetworking/NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		3DD13F38190A56D1004CAD5B /* GDRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDRequest.h; path = GDNetworking/GDRequest.h; sourceTree = "<group>"; };
+		3DD13F39190A56D1004CAD5B /* GDRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDRequest.m; path = GDNetworking/GDRequest.m; sourceTree = "<group>"; };
 		3DD8A8A4190A51F800C5D614 /* GDNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD8A8A7190A51F800C5D614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DD8A8A9190A51F800C5D614 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD13F37190A5694004CAD5B /* GDNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3D08C8A3190A588900FF052A /* NSDictionary+JSON.h */,
+				3D08C8A4190A588900FF052A /* NSDictionary+JSON.m */,
+				3DD13F38190A56D1004CAD5B /* GDRequest.h */,
+				3DD13F39190A56D1004CAD5B /* GDRequest.m */,
+			);
+			name = GDNetworking;
+			sourceTree = "<group>";
+		};
 		3DD8A89B190A51F800C5D614 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +132,7 @@
 		3DD8A8AD190A51F800C5D614 /* GDNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				3DD13F37190A5694004CAD5B /* GDNetworking */,
 				3DD8A8B6190A51F800C5D614 /* GDAppDelegate.h */,
 				3DD8A8B7190A51F800C5D614 /* GDAppDelegate.m */,
 				3DD8A8B9190A51F800C5D614 /* Main_iPhone.storyboard */,
@@ -255,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD8A8B4190A51F800C5D614 /* main.m in Sources */,
+				3D08C8A7190A588900FF052A /* NSDictionary+JSON.m in Sources */,
 				3DD8A8C1190A51F800C5D614 /* GDViewController.m in Sources */,
+				3DD13F3A190A56D1004CAD5B /* GDRequest.m in Sources */,
 				3DD8A8B8190A51F800C5D614 /* GDAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD13F3B190A56D1004CAD5B /* GDRequest.m in Sources */,
 				3DD8A8D6190A51F800C5D614 /* GDNetworkingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +493,7 @@
 				3DD8A8DB190A51F800C5D614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DD8A8DC190A51F800C5D614 /* Build configuration list for PBXNativeTarget "GDNetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +502,7 @@
 				3DD8A8DE190A51F800C5D614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
