@@ -41,7 +41,7 @@ Simple http put example:
 
 <pre>
 - (void)registerUserUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
-    NSString *url = [self makeURL:@"User/Register"];
+    NSString *url = @"https://www.yourdomain.com/User/Register";
     NSDictionary *requestParameters = @{@"url" : url, @"method" : @"PUT" , @"headers" : @{@"Content-Type" : @"application/json; charset=utf-8"}, @"parameters" : parameters};
     
     APIRequest *request = [[APIRequest alloc] init];
