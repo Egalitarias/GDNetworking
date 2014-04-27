@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDRequest.h"
 
-@interface GDViewController : UIViewController
+@interface GDViewController : UIViewController <GDRequestDelegate>
+
+@property (nonatomic, weak) IBOutlet UITextField *urlTextField;
+@property (nonatomic, weak) IBOutlet UITextView *statusCodeTextView;
+@property (nonatomic, weak) IBOutlet UITextView *responseTextView;
+
+-(IBAction)getButtonPressed:(id)sender;
 
 @end
