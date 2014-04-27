@@ -7,6 +7,8 @@ Simple json networking library for iOS.
 Simple http get example:
 
 <pre>
+#import "GDNetworking.h"
+
 -(IBAction)getButtonPressed:(id)sender {
     [self.view endEditing:YES];
     
@@ -40,6 +42,10 @@ Simple http get example:
 Simple http put example:
 
 <pre>
+#import "GDNetworking.h"
+
+// example parameters: NSDictionary *parameters = @{@"FirstName" : firstNameText, @"LastName" : lastNameText, @"Email" : emailText, @"Password" : passwordText, @"ConfirmPassword" : passwordText};
+
 - (void)registerUserUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
     NSString *url = @"https://www.yourdomain.com:12345/User/Register";
     NSDictionary *requestParameters = @{@"url" : url, @"method" : @"PUT" , @"headers" : @{@"Content-Type" : @"application/json; charset=utf-8"}, @"parameters" : parameters};
@@ -53,6 +59,8 @@ Simple http put example:
 Login example using http post:
 
 <pre>
+#import "GDNetworking.h"
+
 // example parameters: NSDictionary *parameters = @{@"Email" : emailText, @"Password" : passwordText};
 - (void)loginUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
     NSString *url = @"https://www.yourdomain.com:12345/User/Login";
@@ -67,6 +75,9 @@ Login example using http post:
 Simple http delete example:
 
 <pre>
+#import "GDNetworking.h"
+
+// example parameters: NSDictionary *parameters = @{@"id" : @"1"};
 - (void)deleteUserUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
     NSString *url = @"https://www.yourdomain.com:12345/User/Delete"];
     NSString *basicAuthentication = [self makeAuthorization];
