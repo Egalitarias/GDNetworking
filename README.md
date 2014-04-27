@@ -45,7 +45,6 @@ Simple http put example:
 #import "GDNetworking.h"
 
 // example parameters: NSDictionary *parameters = @{@"FirstName" : firstNameText, @"LastName" : lastNameText, @"Email" : emailText, @"Password" : passwordText, @"ConfirmPassword" : passwordText};
-
 - (void)registerUserUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
     NSString *url = @"https://www.yourdomain.com:12345/User/Register";
     NSDictionary *requestParameters = @{@"url" : url, @"method" : @"PUT" , @"headers" : @{@"Content-Type" : @"application/json; charset=utf-8"}, @"parameters" : parameters};
