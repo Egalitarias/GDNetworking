@@ -49,3 +49,17 @@ Simple http put example:
 }
 
 </pre>
+
+Login example using http post:
+
+<pre>
+// example parameters: NSDictionary *parameters = @{@"Email" : emailText, @"Password" : passwordText};
+- (void)loginUsingDictionary:(NSDictionary *)parameters delegate:(id<UpdateDelegate>)delegate {
+    NSString *url = [self makeURL:@"User/Login"];
+    NSDictionary *requestParameters = @{@"url" : url, @"method" : @"POST" , @"headers" : @{@"Content-Type" : @"application/json; charset=utf-8"}, @"parameters" : parameters};
+    
+    APIRequest *request = [[APIRequest alloc] init];
+    [request submitRequestUsingDictionary:requestParameters delegate:delegate];
+}
+
+</pre>
