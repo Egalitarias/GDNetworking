@@ -4,8 +4,9 @@ GDNetworking
 Simple json networking library for iOS.
 
 
-Example:
+Simple http get example:
 
+<pre>
 -(IBAction)getButtonPressed:(id)sender {
     [self.view endEditing:YES];
     
@@ -33,3 +34,5 @@ Example:
     NSString *text = [[NSString alloc] initWithFormat:@"Fail: %d", statusCode];
     [_statusCodeTextView setText:text];
 }
+
+</pre>
